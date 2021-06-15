@@ -12,6 +12,20 @@
       class="form-control"
       formControlName="email"
     />
+    <app-mensagem
+      *ngIf="
+        novoUsuarioForm.get('email')?.errors?.required &&
+        novoUsuarioForm.get('email')?.touched
+      "
+      mensagem="Campo e-mail é obrigatório"
+    ></app-mensagem>
+    <app-mensagem
+      *ngIf="
+        novoUsuarioForm.get('email')?.errors?.email &&
+        novoUsuarioForm.get('email')?.touched
+      "
+      mensagem="E-mail informado é inválido"
+    ></app-mensagem>
   </div>
   <div class="form-group">
     <input
@@ -20,6 +34,13 @@
       class="form-control"
       formControlName="fullName"
     />
+    <app-mensagem
+      *ngIf="
+        novoUsuarioForm.get('fullName')?.errors &&
+        novoUsuarioForm.get('fullName')?.touched
+      "
+      mensagem="Campo nome completo é obrigatório"
+    ></app-mensagem>
   </div>
   <div class="form-group">
     <input
@@ -28,6 +49,11 @@
       class="form-control"
       formControlName="userName"
     />
+    <app-mensagem
+      *ngIf="novoUsuarioForm.get('userName')?.errors?.minusculo
+      && novoUsuarioForm.get('userName')?.touched"
+      mensagem="Usuário deve ser em letra mínuscula"
+    ></app-mensagem>
   </div>
   <div class="form-group">
     <input
