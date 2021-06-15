@@ -15,5 +15,10 @@ export class NovoUsuarioService {
     return this.httpClient.post('http://localhost:3000/user/signup', novoUsuario);
   }
 
+  verificaUsuarioExistente(nomeUsuario: string){
+    const nomeUsuarioParam = nomeUsuario;
+    return this.httpClient.get("http://localhost:3000/user/exists/"+nomeUsuarioParam);
+  }
+
 
 }
