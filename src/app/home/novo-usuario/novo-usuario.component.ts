@@ -23,28 +23,35 @@ export class NovoUsuarioComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.novoUsuarioForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      fullName: ['', [Validators.required]],
-      userName: ['', [minusculoValidator]],
-      password: [''],
-    },
-    {
-      validators: [usuarioSenhaIguaisValidator],
-    });
+    this.novoUsuarioForm = this.formBuilder.group(
+      {
+        email: ['', [Validators.required, Validators.email]],
+        fullName: ['', [Validators.required]],
+        userName: [
+          '',
+          [minusculoValidator],
+          [this.usuarioExistenteService.usuarioJaExite()]
+        ],
+        password: [''],
+      },
+      {
+        validators: [usuarioSenhaIguaisValidator],
+      }
+    );
   }
 
   cadastrarNovoUsuario() {
     if (this.novoUsuarioForm.valid) {
       const novoUsuario = this.novoUsuarioForm.getRawValue() as NovoUsuario;
-      this.novoUsuarioService.cadastrarNovoUsuario(novoUsuario).subscribe((sucesso)=>{
-        this.router.navigate(['']);
-        console.log("Cadastro realizado com sucesso");
-      }, (error) => {
-        console.log(error);
-      })
+      this.novoUsuarioService.cadastrarNovoUsuario(novoUsuario).subscribe(
+        (sucesso) => {
+          this.router.navigate(['']);
+          console.log('Cadastro realizado com sucesso');
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
     }
-
-
   }
 }
