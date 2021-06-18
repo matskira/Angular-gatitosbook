@@ -1,6 +1,13 @@
-# Gatitobook
+<h1 align="center">Gatitos Book</h1>
+<p align="center">
+<img src="https://img.shields.io/badge/maked%20by-matskira-red">
+<img src="https://img.shields.io/badge/angular-11.0.0-informational">
+<img src="https://img.shields.io/badge/Node-14.17.0-informational">
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+
+
+
 
 ## Development server
 
