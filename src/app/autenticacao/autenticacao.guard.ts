@@ -1,7 +1,15 @@
-import { UsuarioService } from './usuario/usuario.service';
 import { Injectable } from '@angular/core';
-import { CanLoad, Route, Router, UrlSegment, UrlTree } from '@angular/router';
+import {
+  CanLoad,
+  Route,
+  UrlSegment,
+  ActivatedRouteSnapshot,
+  RouterStateSnapshot,
+  UrlTree,
+  Router,
+} from '@angular/router';
 import { Observable } from 'rxjs';
+import { UsuarioService } from './usuario/usuario.service';
 
 @Injectable({
   providedIn: 'root',
@@ -21,6 +29,7 @@ export class AutenticacaoGuard implements CanLoad {
       this.router.navigate(['']);
       return false;
     }
+
     return true;
   }
 }
