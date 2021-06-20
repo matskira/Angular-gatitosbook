@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { TokenService } from '../autenticacao/token.service';
-import { Animais } from './animais';
+import { Animais } from './animal';
 import { catchError, mapTo } from 'rxjs/operators';
 
 const API = environment.apiURL;
