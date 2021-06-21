@@ -42,7 +42,7 @@ Vamos abordar elas:
 
 **Login**
 
-![Tela de login](.\readme_assets\img\site_2.png)
+<img src=".\readme_assets\img\site_1.png">
 
 Nesta tela o usuário informará seu login e senha, lembrando que atualmente essa funcionalidade está integrada a uma API NodeJS, que é utilizada como nosso back-end. Além de estar validando os campos inseridos pelo usuário.
 
