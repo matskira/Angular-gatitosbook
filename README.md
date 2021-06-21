@@ -24,7 +24,7 @@ O projeto gatitosbooks é um sistema básico de rede social de fotos focado no a
 
 
 
-![Menu inicial da aplicação](.\readme_assets\img\site_1.png)
+<img src=".\readme_assets\img\site_1.png">
 
 
 
@@ -42,7 +42,7 @@ Vamos abordar elas:
 
 **Login**
 
-<img src=".\readme_assets\img\site_1.png">
+<img src=".\readme_assets\img\site_2.png">
 
 Nesta tela o usuário informará seu login e senha, lembrando que atualmente essa funcionalidade está integrada a uma API NodeJS, que é utilizada como nosso back-end. Além de estar validando os campos inseridos pelo usuário.
 
@@ -50,7 +50,7 @@ Nesta tela o usuário informará seu login e senha, lembrando que atualmente ess
 
 **Cadastro de usuário novo**
 
-![Tela de cadastro de usuário](.\readme_assets\img\site_#.png)
+<img src=".\readme_assets\img\site_#.png">
 
 Aqui o usuário poderá se cadastrar em nosso site, com validação presente em todos os campos (e-mail válido, nome, usuário e senha), inclusive uma assíncrona, no campo de usuário iremos validar para verificar se já existe um usuário presente com esses caracteres. 
 
@@ -58,7 +58,7 @@ Aqui o usuário poderá se cadastrar em nosso site, com validação presente em 
 
 **Tela principal**
 
-![Tela principal](.\readme_assets\img\site_4.png)
+<img src=".\readme_assets\img\site_4.png">
 
 
 
@@ -68,7 +68,7 @@ Após o login, o usuário irá ver as fotos ligadas ao seu perfil, além disso p
 
 **Detalhes da foto**
 
-![Detalhes da foto](.\readme_assets\img\site_5.png)
+<img src=".\readme_assets\img\site_5.png">
 
 Ao clicar em uma imagem o usuário irá ver os detalhes da imagem, com os comentários presentes de quem comentou e inclusive pode publicar um novo comentário. Também ao clicar no ícone de lixeira em cima, ele pode deletar esta imagem.
 
@@ -76,13 +76,13 @@ Ao clicar em uma imagem o usuário irá ver os detalhes da imagem, com os coment
 
 **Publicação de nova foto**
 
-![Novo animal](.\readme_assets\img\site_6.png)
+<img src=".\readme_assets\img\site_6.png">
 
 
+<img src=".\readme_assets\img\site_7.png">
 
-![site_7](.\readme_assets\img\site_7.png)
 
-![cadastro](.\readme_assets\img\site_8.png)
+<img src=".\readme_assets\img\site_8.png">
 
 
 
@@ -130,7 +130,7 @@ Tenho o costume de anotar as ferramentas que aprendi ao longo da criação de um
 
 2. Extrair nosso back-end Node em uma pasta
 
-   1. ![instal_1](.\readme_assets\img\instal_1.png)
+   1. <img src=".\readme_assets\img\instal_1.png">
 
    
 
